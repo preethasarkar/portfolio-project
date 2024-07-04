@@ -1,0 +1,151 @@
+body{
+    background-image: linear-gradient(to bottom right, #080808 , #333230, #464543, #61605e, #d3d3d2);
+    min-height:100vh;
+    height:max-content;
+}
+
+*{
+    color:white;
+}
+
+/** Top of the page**/
+.container1{
+    display:flex;
+    width:100%;
+}
+
+.sub_container{
+    display:flex;
+    width:50%;
+    justify-content: space-around;
+    align-items: center;
+}
+.left{
+    flex-basis: 50%;
+    margin-top:16px;
+    margin-bottom: 16px;
+    margin-left: 25px;
+    font-size: 39px;
+}
+
+.right{
+    margin-top: 16px;
+    font-size: 20px;
+}
+
+/**Page Body**/
+.container2{
+    position:absolute;
+    left:10%;
+    top:50vh;
+}
+
+.container2 button{
+    background-color: #ffde59;
+    color: black;
+    border: none;
+    width: 150px;
+    height:50px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 25px;
+    text-align: center;
+}
+
+.sub_container1 p{
+    font-style: italic;
+    font-size: 35px;
+}
+
+.sub_container1 h1{
+    font-size: 64px;
+    font-style: normal;
+    letter-spacing: 5px;
+}
+
+
+
+/** About Me Section**/
+.container3{
+    position:relative;
+    top:105vh;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+img.about-me{
+    height: 450px;
+    width:380px;
+    margin-left: 5%;    
+}
+.sub_container3{
+    flex-basis: 65%
+}
+
+.tab-titles{
+    display:flex;
+    margin:20px 0px;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    cursor:pointer;
+    position:relative;
+}
+/* To be learnt */
+.tab-links::after{
+    content:'';
+    width:0;
+    height:3px;
+    background: #ff004f;
+    position: absolute;
+    left:0;
+    bottom:-8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width:100%;
+    
+}   
+
+
+.tab-content > ul{
+    list-style: none;
+    padding-inline-start: 0px;
+}
+.tab-content ul li {
+    margin:10px 0px;
+}
+.tab-content ul li span{
+    color:#b54769;
+}
+
+.tab-content{
+    display:none;
+}
+
+.tab-content.active-tab{
+    display:block;
+}
+
+
+/** My Projects Section **/
+.container4{
+    position: relative;
+    top:115vh;
+}
+
+.project{
+    display: flex;
+    justify-content: center;
+}
+
+.carousel{
+    width:50%;
+}
+
+
+
+
+
